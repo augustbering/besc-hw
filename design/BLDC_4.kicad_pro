@@ -964,7 +964,7 @@
       "plot": "Gerber/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "BLDC_4.step",
       "svg": "",
       "vrml": ""
     },

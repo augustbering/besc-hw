@@ -7123,7 +7123,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "CRF1:1PAD_4x5mm"
+		(property "Footprint" "MountingHole:MountingHole_3.7mm_Pad"
 			(at 227.33 35.56 0)
 			(effects
 				(font
@@ -7189,7 +7189,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "CRF1:1PAD_4x5mm"
+		(property "Footprint" "MountingHole:MountingHole_3.7mm_Pad"
 			(at 227.33 30.48 0)
 			(effects
 				(font
