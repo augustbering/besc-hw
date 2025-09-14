@@ -1,13 +1,13 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "74c02944-3d75-4706-bfd0-51de74754f90")
 	(paper "A4")
 	(title_block
 		(title "BLDC Driver 4.11")
 		(date "21 aug 2015")
-		(rev "4.12")
+		(rev "${version}")
 		(company "Benjamin Vedder")
 	)
 	(lib_symbols
@@ -79,7 +79,8 @@
 			(symbol "GND-RESCUE-BLDC_4_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -96,9 +97,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "BLDC_4-rescue:MOSFET_N"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -175,7 +179,19 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -2.54) (xy 0 -2.54)
+						(xy 1.27 0.762) (xy 1.27 -0.762) (xy 0 0) (xy 1.27 0.762) (xy 1.27 0.762)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -187,7 +203,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 2.54) (xy 0 2.54)
+						(xy 2.54 -2.54) (xy 0 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -209,38 +225,8 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 1.27 0.762) (xy 1.27 -0.762) (xy 0 0) (xy 1.27 0.762) (xy 1.27 0.762)
-					)
-					(stroke
-						(width 0.2032)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
 			)
 			(symbol "MOSFET_N_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "D"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at -5.08 0 0)
 					(length 3.81)
@@ -252,6 +238,24 @@
 						)
 					)
 					(number "G"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "D"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -278,9 +282,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "BLDC_4-rescue:R-RESCUE-BLDC_4"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -388,9 +395,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Polarized"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -546,6 +556,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -1748,7 +1759,6 @@
 	(hierarchical_label "M_L1"
 		(shape input)
 		(at 102.87 95.25 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1760,7 +1770,6 @@
 	(hierarchical_label "PHASE_1"
 		(shape output)
 		(at 132.08 83.82 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1772,7 +1781,6 @@
 	(hierarchical_label "H3_VS"
 		(shape output)
 		(at 205.74 83.82 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1784,7 +1792,6 @@
 	(hierarchical_label "H2_LOW"
 		(shape passive)
 		(at 167.64 114.3 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1796,7 +1803,6 @@
 	(hierarchical_label "M_H2"
 		(shape input)
 		(at 142.24 71.12 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1808,7 +1814,6 @@
 	(hierarchical_label "M_L2"
 		(shape input)
 		(at 143.51 95.25 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1820,7 +1825,6 @@
 	(hierarchical_label "H1_LOW"
 		(shape passive)
 		(at 128.27 114.3 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1832,7 +1836,6 @@
 	(hierarchical_label "PHASE_2"
 		(shape output)
 		(at 171.45 83.82 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1844,7 +1847,6 @@
 	(hierarchical_label "H1_VS"
 		(shape output)
 		(at 125.73 83.82 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1856,7 +1858,6 @@
 	(hierarchical_label "M_H3"
 		(shape input)
 		(at 182.88 71.12 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1868,7 +1869,6 @@
 	(hierarchical_label "M_H1"
 		(shape input)
 		(at 102.87 71.12 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1880,7 +1880,6 @@
 	(hierarchical_label "H2_VS"
 		(shape output)
 		(at 165.1 83.82 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1892,7 +1891,6 @@
 	(hierarchical_label "H3_LOW"
 		(shape passive)
 		(at 208.28 114.3 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1904,7 +1902,6 @@
 	(hierarchical_label "M_L3"
 		(shape input)
 		(at 184.15 95.25 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1916,7 +1913,6 @@
 	(hierarchical_label "PHASE_3"
 		(shape output)
 		(at 212.09 83.82 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2113,6 +2109,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C445669"
+			(at 125.73 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "D"
 			(uuid "54a15c00-8c2d-4f5a-b34c-41f5ee852a05")
 		)
@@ -2177,6 +2182,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 125.73 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C445669"
 			(at 125.73 95.25 0)
 			(effects
 				(font
@@ -2525,6 +2539,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C445669"
+			(at 165.1 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "D"
 			(uuid "749461d5-fad7-40ff-bad2-448146a13516")
 		)
@@ -2589,6 +2612,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 165.1 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C445669"
 			(at 165.1 71.12 0)
 			(effects
 				(font
@@ -2669,6 +2701,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C445669"
+			(at 205.74 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "D"
 			(uuid "2d3a385d-8d77-42aa-a25d-8345711d408d")
 		)
@@ -2733,6 +2774,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 205.74 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C445669"
 			(at 205.74 95.25 0)
 			(effects
 				(font
@@ -3015,6 +3065,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "c106632"
+			(at 237.49 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field6" ""
+			(at 237.49 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b5b6a18b-0ca6-4406-bd13-ec82f11294e8")
 		)
@@ -3077,6 +3145,24 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
+			(at 257.81 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "c106632"
+			(at 257.81 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field6" ""
 			(at 257.81 71.12 0)
 			(effects
 				(font

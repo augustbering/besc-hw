@@ -1,18 +1,20 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "c536bba4-c58f-448f-8f80-d7c8f8f8dcc1")
 	(paper "A4")
 	(title_block
 		(title "BLDC Driver 4.11")
 		(date "21 aug 2015")
-		(rev "4.12")
+		(rev "${version}")
 		(company "Benjamin Vedder")
 	)
 	(lib_symbols
 		(symbol "BLDC_4-rescue:C-RESCUE-BLDC_4"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -74,7 +76,7 @@
 			(symbol "C-RESCUE-BLDC_4_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -86,7 +88,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -135,6 +137,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "BLDC_4-rescue:GND-RESCUE-BLDC_4"
 			(power)
@@ -204,7 +207,8 @@
 			(symbol "GND-RESCUE-BLDC_4_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -221,9 +225,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "BLDC_4-rescue:R-RESCUE-BLDC_4"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -331,6 +338,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "BLDC_4-rescue:VCC"
 			(power)
@@ -383,6 +391,17 @@
 				)
 			)
 			(symbol "VCC_0_1"
+				(circle
+					(center 0 1.905)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
 						(xy 0 0) (xy 0 1.27)
@@ -395,22 +414,12 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 0 1.905)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
 			)
 			(symbol "VCC_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "VCC"
 						(effects
 							(font
@@ -427,6 +436,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -544,7 +554,6 @@
 	(hierarchical_label "Temp"
 		(shape input)
 		(at 115.57 95.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -597,6 +606,15 @@
 		)
 		(property "Description" ""
 			(at 111.76 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mpn" "NCP18XH103F03RB"
+			(at 111.76 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -730,6 +748,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 105.41 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C23630"
 			(at 105.41 104.14 0)
 			(effects
 				(font
