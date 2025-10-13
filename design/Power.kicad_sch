@@ -17568,84 +17568,6 @@
 		)
 	)
 	(symbol
-		(lib_id "BLDC_4-rescue:C-RESCUE-BLDC_4")
-		(at 270.51 36.83 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-0000523435ab")
-		(property "Reference" "C37"
-			(at 267.97 39.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "15u,100V"
-			(at 271.78 26.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "w_smd_cap:c_2220"
-			(at 270.51 36.83 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 270.51 36.83 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 270.51 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB" "C5795620"
-			(at 270.51 36.83 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "086ef013-ca50-41cb-b460-ebc0c83f3f85")
-		)
-		(pin "2"
-			(uuid "cfa12475-9f68-46d1-9682-2f32fc1e1e48")
-		)
-		(instances
-			(project "BLDC_4"
-				(path "/0e1acf8b-7147-4bb2-8049-903657e268d1/00000000-0000-0000-0000-0000504f83be"
-					(reference "C37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "BLDC_4-rescue:NCP1117ST33T3G")
 		(at 160.02 30.48 0)
 		(unit 1)
@@ -18302,6 +18224,84 @@
 			(project "BLDC_4"
 				(path "/0e1acf8b-7147-4bb2-8049-903657e268d1/00000000-0000-0000-0000-0000504f83be"
 					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BLDC_4-rescue:C-RESCUE-BLDC_4")
+		(at 270.51 36.83 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6be201a8-3fee-4364-a263-4ce47ffbf75e")
+		(property "Reference" "C37"
+			(at 267.97 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u,50V"
+			(at 271.78 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "CRF1:SMD-1206"
+			(at 270.51 36.83 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 270.51 36.83 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 270.51 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C13585"
+			(at 270.51 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "464f174b-4ca8-4ca3-ae4e-8239ee61f8aa")
+		)
+		(pin "2"
+			(uuid "be1d26e1-0acb-4bc1-b401-f5aadb53f10d")
+		)
+		(instances
+			(project "BLDC_4"
+				(path "/0e1acf8b-7147-4bb2-8049-903657e268d1/00000000-0000-0000-0000-0000504f83be"
+					(reference "C37")
 					(unit 1)
 				)
 			)

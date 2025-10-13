@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.65,
-          "height": 0.65,
-          "width": 0.65
+          "drill": 0.7,
+          "height": 1.1,
+          "width": 1.1
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -58,40 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "hole_clearance|80800000|153170000|5d4fa2ed-a8f9-4fad-bf5d-0a637e720eb1|8d56e800-644d-4f05-a5ae-11f116e4dfac",
-          ""
-        ],
-        [
-          "hole_clearance|80800000|153170000|9c4bdc8b-bbaf-47d4-a952-b8e0832bdd47|8d56e800-644d-4f05-a5ae-11f116e4dfac",
-          ""
-        ],
-        [
-          "hole_clearance|81000000|153170000|66c6d067-7782-4201-866e-f98c0bfa52fa|8d56e800-644d-4f05-a5ae-11f116e4dfac",
-          ""
-        ],
-        [
-          "hole_clearance|81000000|153170000|7e7d9bbd-efd9-4ef7-8916-c4f4ea7fd930|8d56e800-644d-4f05-a5ae-11f116e4dfac",
-          ""
-        ],
-        [
-          "hole_clearance|86400000|153170000|6c68b688-7a8a-4e40-938c-4928644d13b0|fbd574e2-cd6d-46c2-a030-58f867418e65",
-          ""
-        ],
-        [
-          "hole_clearance|86400000|153170000|886bc5b4-2226-4c5e-bc71-d3af4e23588a|fbd574e2-cd6d-46c2-a030-58f867418e65",
-          ""
-        ],
-        [
-          "hole_clearance|86600000|153170000|37982164-3e4c-4d9a-9b41-8b11170c512f|fbd574e2-cd6d-46c2-a030-58f867418e65",
-          ""
-        ],
-        [
-          "hole_clearance|86600000|153170000|da86e36b-fee6-483b-b494-ca5cb4c3c036|fbd574e2-cd6d-46c2-a030-58f867418e65",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -136,12 +103,12 @@
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
-        "text_height": "warning",
+        "text_height": "ignore",
         "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
@@ -1212,7 +1179,7 @@
           "show": false
         }
       ],
-      "filter_string": "r1",
+      "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": false,
       "name": "",
@@ -1302,6 +1269,6 @@
     ]
   ],
   "text_variables": {
-    "version": "4.13"
+    "version": "4.14"
   }
 }
